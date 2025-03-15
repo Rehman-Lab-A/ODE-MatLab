@@ -1,0 +1,31 @@
+% functionScript.m
+% This script demonstrates how to write and use a MATLAB function.
+
+% Step 1: Define the function
+% ------------------------------------------------
+% Syntax: function [output1, output2, ...] = functionName(input1, input2, ...)
+% - 'output1', 'output2', etc.: Variables returned by the function.
+% - 'input1', 'input2', etc.: Variables passed to the function.
+% - 'functionName': Name of the function (must match the filename).
+
+function [output1, output2] = functionName(input1, input2)
+    % Step 2: Perform computations
+    % ------------------------------------------------
+    % Add your calculations or logic here.
+    output1 = input1 + input2;  % Example computation
+    output2 = input1 * input2;  % Example computation
+end
+
+% Step 3: Call the function in the script
+% ------------------------------------------------
+% Define input variables
+input1 = 5;  % Example input 1
+input2 = 3;  % Example input 2
+
+% Call the function and store the outputs
+[result1, result2] = functionName(input1, input2);
+
+% Step 4: Display the results
+% ------------------------------------------------
+disp(['Result 1 (Sum): ', num2str(result1)]);
+disp(['Result 2 (Product): ', num2str(result2)]);
